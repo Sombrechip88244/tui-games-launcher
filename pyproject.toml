@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tui-games-launcher"
+version = "1.0.0"
+description = "A minimal, classic, keyboard-driven game launcher for Steam and more."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    { name = "Sombrechip88244", email = "Sombrechip88244@users.noreply.github.com" }
+]
+dependencies = [
+    "textual>=0.70.0",
+    "tomli-w>=1.0.0",
+]
+
+[project.scripts]
+gamest = "tui_games_launcher.main:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

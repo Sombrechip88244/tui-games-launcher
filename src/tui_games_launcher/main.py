@@ -10,7 +10,19 @@ try:
 except ImportError:
     import tomli as tomllib # Fallback for older python (requires pip install tomli)
 
-CONFIG_FILE = "games.toml"
+# Configuration path handling
+DEFAULT_CONFIG_NAME = "games.toml"
+XDG_CONFIG_HOME = os.environ.get("XDG_CONFIG_HOME", os.path.expanduser("~/.config"))
+SYSTEM_CONFIG_DIR = os.path.join(XDG_CONFIG_HOME, "tui-games-launcher")
+SYSTEM_CONFIG_PATH = os.path.join(SYSTEM_CONFIG_DIR, DEFAULT_CONFIG_NAME)
+
+# Use local file if it exists, otherwise use system config path
+if os.path.exists(DEFAULT_CONFIG_NAME):
+    CONFIG_FILE = DEFAULT_CONFIG_NAME
+else:
+    # Ensure directory exists for system config
+    os.makedirs(SYSTEM_CONFIG_DIR, exist_ok=True)
+    CONFIG_FILE = SYSTEM_CONFIG_PATH
 
 class GameDetail(Static):
     """Displays details for the selected game."""
@@ -246,7 +258,7 @@ class GameLauncherApp(App):
         # Exit the TUI first so the terminal is clean
         self.exit(result=command)
 
-if __name__ == "__main__":
+def main():
     app = GameLauncherApp()
     # The app.run() will now return the command string when the app exits via self.exit(command)
     cmd = app.run()
@@ -258,3 +270,6 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Error launching game: {e}")
             input("Press Enter to continue...")
+
+if __name__ == "__main__":
+    main()
