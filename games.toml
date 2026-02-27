@@ -1,0 +1,89 @@
+[[games]]
+id = "1"
+title = "Super Tux Kart"
+command = "supertuxkart"
+description = "A 3D open-source kart racing game with many characters, tracks, and modes to play."
+
+[[games]]
+id = "2"
+title = "Vim Adventures"
+command = "vim"
+description = "The ultimate text editor game. Exit if you can!"
+
+[[games]]
+id = "3"
+title = "Htop"
+command = "htop"
+description = "Monitor your system resources in style. Not really a game, but looks cool."
+
+[[games]]
+id = "4"
+title = "Echo Test"
+command = "echo 'Game Running... Press Enter to exit'; read"
+description = "A simple test command to verify the launcher works."
+
+[[games]]
+id = "1391110"
+title = "Steam Linux Runtime 2.0 (soldier)"
+command = "steam steam://rungameid/1391110"
+description = "Steam Game (AppID: 1391110)"
+
+[[games]]
+id = "1070560"
+title = "Steam Linux Runtime 1.0 (scout)"
+command = "steam steam://rungameid/1070560"
+description = "Steam Game (AppID: 1070560)"
+
+[[games]]
+id = "322330"
+title = "Don't Starve Together"
+command = "steam steam://rungameid/322330"
+description = "Steam Game (AppID: 322330)"
+
+[[games]]
+id = "413150"
+title = "Stardew Valley"
+command = "steam steam://rungameid/413150"
+description = "Steam Game (AppID: 413150)"
+
+[[games]]
+id = "1628350"
+title = "Steam Linux Runtime 3.0 (sniper)"
+command = "steam steam://rungameid/1628350"
+description = "Steam Game (AppID: 1628350)"
+
+[[games]]
+id = "1493710"
+title = "Proton Experimental"
+command = "steam steam://rungameid/1493710"
+description = "Steam Game (AppID: 1493710)"
+
+[[games]]
+id = "2805730"
+title = "Proton 9.0"
+command = "steam steam://rungameid/2805730"
+description = "Steam Game (AppID: 2805730)"
+
+[[games]]
+id = "228980"
+title = "Steamworks Common Redistributables"
+command = "steam steam://rungameid/228980"
+description = "Steam Game (AppID: 228980)"
+
+[[games]]
+id = "250900"
+title = "The Binding of Isaac: Rebirth"
+command = "steam steam://rungameid/250900"
+description = "Steam Game (AppID: 250900)"
+
+[[games]]
+id = "105600"
+title = "Terraria"
+command = "steam steam://rungameid/105600"
+description = "Steam Game (AppID: 105600)"
+
+[[games]]
+id = "3347820"
+title = "CloverPit Demo"
+command = "steam steam://rungameid/3347820"
+description = "Steam Game (AppID: 3347820)"
