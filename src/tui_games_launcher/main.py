@@ -184,6 +184,11 @@ class GameLauncherApp(App):
                                     appid = line.split('"')[-2]
                             
                             if name and appid and appid not in seen_ids:
+                                # Filter out common Steam non-game tools
+                                name_lower = name.lower()
+                                if any(tool in name_lower for tool in ["proton", "steam linux runtime", "steamworks", "steam controller"]):
+                                    continue
+                                    
                                 found_games.append({
                                     "id": appid,
                                     "title": name,
