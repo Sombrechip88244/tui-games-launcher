@@ -71,7 +71,7 @@ class GameLauncherApp(App):
         width: 100%;
         content-align: center middle;
         text-style: bold;
-        color: ansi_green;
+        color: ansi_bright_white;
         margin-bottom: 1;
     }
 
@@ -103,7 +103,7 @@ class GameLauncherApp(App):
     #launch-btn {
         width: 100%;
         margin-top: 1;
-        background: ansi_green;
+        background: ansi_white;
         color: ansi_black;
         text-style: bold;
     }
